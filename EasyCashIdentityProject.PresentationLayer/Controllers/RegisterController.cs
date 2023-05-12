@@ -32,12 +32,24 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
                     Name = appUserRegisterDto.Name,
                     Surname = appUserRegisterDto.Surname,
                     Email = appUserRegisterDto.Email,
+                    City = "aaaa",
+                    District = "bbbb",
+                    ImageUrl = "cccc"
+
                 };
                 //CreateAsync = Identity için veri eklemeye yarar.
                 var result = await _userManager.CreateAsync(appUser, appUserRegisterDto.Password);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index", "ConfirmMail");
+                }
+                //Kullanıcı şifresini formatam uygun olmadığı taktirde aşağıdaki else blloğuna girer ve hata mesajını yayınlar
+                else
+                {
+                    foreach (var item in result.Errors)
+                    {
+                        ModelState.AddModelError("", item.Description);
+                    }
                 }
             }
             return View();
