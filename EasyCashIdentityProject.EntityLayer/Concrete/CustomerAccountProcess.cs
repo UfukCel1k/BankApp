@@ -18,6 +18,5 @@ namespace EasyCashIdentityProject.EntityLayer.Concrete
 
         //Tarih
         public DateTime ProcessDate { get; set; }
-
     }
 }

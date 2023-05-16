@@ -27,7 +27,7 @@ namespace EasyCashIdentityProject.DataAccessLayer.Repositories
             //Context sınıfından bir nesne türettik.
             using var context = new Context();
             //ID'ye göre getirecek.
-            return context.Set<T>().Find(id); 
+            return context.Set<T>().Find(id);
         }
         public List<T> GetList()
         {

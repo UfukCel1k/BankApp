@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace EasyCashIdentityProject.DataAccessLayer.Abstract
 {
-    //Dışarıdan T değeri alacak ve bu T değeri class olucak
     public interface IGenericDal<T> where T : class
     {
         void Insert(T t);

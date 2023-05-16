@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace EasyCashIdentityProject.EntityLayer.Concrete
 {
-    public class AppRole: IdentityRole<int>
+    public class AppRole : IdentityRole<int>
     {
-
     }
 }
