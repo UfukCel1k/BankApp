@@ -66,13 +66,14 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
                     mimeMessage.Subject = "Easy Cash Onay Kodu";
 
                     //Mail transfer protokol smtp.gamil.com olarak belitiyoruz. Türkiyenin port numarası 587'dir. Güvenlik sağlaması için false veriyoruz.
+                    //fbavsfldugraalni => mail adresinin Google Hesap ayarları bölümünden arama kısmına Uygulama Şifreleri'ne giriyoruz. Uygulama seçin bölümüne (diğer) seçiyoruz. Cihaz seçin bölümüne ise (diğer) seçiyoruz ve isim vererek kodu alıyoruz.
                     SmtpClient client = new SmtpClient();
                     client.Connect("smtp.gmail.com", 587, false);
                     client.Authenticate("ufukcelik.dev@gmail.com", "fbavsfldugraalni");
                     client.Send(mimeMessage);
                     client.Disconnect(true);
 
-
+                    TempData["Mail"] = appUserRegisterDto.Email;
                     return RedirectToAction("Index", "ConfirmMail");
                 }
                 //Kullanıcı şifresini formatam uygun olmadığı taktirde aşağıdaki else blloğuna girer ve hata mesajını yayınlar
