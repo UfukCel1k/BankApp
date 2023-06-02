@@ -39,7 +39,7 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
                 //Eğer sisteme giriş yapan kullanıcı mail adresini onaylamış ise MyProfile sayfasına yönlendirecek.
                 if (user.EmailConfirmed == true)
                 {
-                    return RedirectToAction("Index", "MyProfile");
+                    return RedirectToAction("Index", "MyAccounts");
                 }
             }
             return View();
