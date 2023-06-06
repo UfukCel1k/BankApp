@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EasyCashIdentityProject.EntityLayer.Concrete
+namespace EasyCashIdentityProject.DtoLayer.Dtos.CustomerAccountProccessDtos
 {
-    public class CustomerAccountProcess
+    public class SendMoneyForCustomerAccountProcessDto
     {
-        public int CustomerAccountProcessID { get; set; }
 
         //İşlem türü.
         public string ProcessType { get; set; }
@@ -20,10 +19,9 @@ namespace EasyCashIdentityProject.EntityLayer.Concrete
         public DateTime ProcessDate { get; set; }
 
         //Boş geçilebilir olduğu için int'in yanına ? işareti koyuyoruz.
-        public int? SenderID { get; set; }
-        public int? ReceiverID { get; set; }
+        public int SenderID { get; set; }
+        public int ReceiverID { get; set; }
+        public string ReceiverAccountNumber { get; set; }
 
-        public CustomerAccount SenderCustomer { get; set; }
-        public CustomerAccount ReceiverCustomer { get; set; }
     }
 }
