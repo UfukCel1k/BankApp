@@ -1,1 +1,1 @@
-# EasyCashIdentity
+# BankApp
