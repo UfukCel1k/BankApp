@@ -187,6 +187,10 @@ namespace EasyCashIdentityProject.DataAccessLayer.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("ProcessDate")
                         .HasColumnType("datetime2");
 

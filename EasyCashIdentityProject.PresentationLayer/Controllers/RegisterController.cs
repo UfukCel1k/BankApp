@@ -57,7 +57,7 @@ namespace EasyCashIdentityProject.PresentationLayer.Controllers
                     mimeMessage.From.Add(mailboxAddressFrom);
                     //mailboxAddressTo nesne örneğinden giden adrese gidecek
                     mimeMessage.To.Add(mailboxAddressTo);
-
+    
                     //içeriği
                     var bodyBuilder = new BodyBuilder();
                     bodyBuilder.TextBody = "Kayıt işlemi gerçekleştirmek için onay kodunuz: " + code;

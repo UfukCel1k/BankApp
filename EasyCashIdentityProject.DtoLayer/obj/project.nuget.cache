@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9tcHtN8RD64QE+aBk81r7+DAjlo3jGOUGiz00uLj7vieWFgmJMaE74NG2HzfEbTmZIziIilDxOisqe16IwxxVQ==",
+  "dgSpecHash": "NaU3c0DqgiHZKF7sAJy776+pUNaqoSPPPHEwN5F/Ggxp/Eius/Z2602m+aFsdBGB8I9/Hrmj1D5HvrCYB2VfKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ufukc\\OneDrive\\Belgeler\\Visual Studio 2022\\EasyCashIdentityProject\\EasyCashIdentityProject.DtoLayer\\EasyCashIdentityProject.DtoLayer.csproj",
+  "projectFilePath": "C:\\Users\\ufukc\\OneDrive\\Belgeler\\Visual Studio 2022\\MyProjects\\EasyCashIdentityProject\\EasyCashIdentityProject.DtoLayer\\EasyCashIdentityProject.DtoLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ufukc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ufukc\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
